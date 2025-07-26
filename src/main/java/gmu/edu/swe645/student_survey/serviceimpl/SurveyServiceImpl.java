@@ -3,7 +3,6 @@ package gmu.edu.swe645.student_survey.serviceimpl;
 import java.util.List;
 import java.util.Optional;
 
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import gmu.edu.swe645.student_survey.model.SurveyEntry;
@@ -12,9 +11,8 @@ import gmu.edu.swe645.student_survey.service.SurveyService;
 
 @Service
 public class SurveyServiceImpl implements SurveyService{
-	
-	@Autowired
-	public SurveyRepository surveyRepository;
+
+	private final SurveyRepository surveyRepository;
 	
 	public SurveyServiceImpl(SurveyRepository surveyRepository) {
 		super();
