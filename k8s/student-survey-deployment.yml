@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: student-survey-deployment
+  labels:
+    app: student-survey
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: student-survey
+  template:
+    metadata:
+      labels:
+        app: student-survey
+    spec:
+      containers:
+      - name: student-survey
+        image: jcoben/student_survey:v1
+        ports:
+        - containerPort: 8080
+

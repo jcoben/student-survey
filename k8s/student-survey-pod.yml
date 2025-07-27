@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: student-survey
+spec:
+  containers:
+  - name: student-survey
+    image: jcoben/student_survey:v1
+    ports:
+    - containerPort: 8080
