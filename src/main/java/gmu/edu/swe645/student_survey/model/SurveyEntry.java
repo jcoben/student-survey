@@ -100,4 +100,181 @@ public class SurveyEntry {
 		this.raffle = entry.raffle;
 		this.comment = entry.comment;
 	}
+
+
+	public long getId() {
+		return id;
+	}
+
+	public void setId(long id) {
+		this.id = id;
+	}
+
+	public String getfName() {
+		return fName;
+	}
+
+	public void setfName(String fName) {
+		this.fName = fName;
+	}
+
+	public String getlName() {
+		return lName;
+	}
+
+	public void setlName(String lName) {
+		this.lName = lName;
+	}
+
+	public String getStreetAddress() {
+		return streetAddress;
+	}
+
+	public void setStreetAddress(String streetAddress) {
+		this.streetAddress = streetAddress;
+	}
+
+	public String getCity() {
+		return city;
+	}
+
+	public void setCity(String city) {
+		this.city = city;
+	}
+
+	public String getState() {
+		return state;
+	}
+
+	public void setState(String state) {
+		this.state = state;
+	}
+
+	public String getZip() {
+		return zip;
+	}
+
+	public void setZip(String zip) {
+		this.zip = zip;
+	}
+
+	public String getTelephone() {
+		return telephone;
+	}
+
+	public void setTelephone(String telephone) {
+		this.telephone = telephone;
+	}
+
+	public String getEmail() {
+		return email;
+	}
+
+	public void setEmail(String email) {
+		this.email = email;
+	}
+
+	public String getDate() {
+		return date;
+	}
+
+	public void setDate(String date) {
+		this.date = date;
+	}
+
+	public String getLikeStudents() {
+		return likeStudents;
+	}
+
+	public void setLikeStudents(String likeStudents) {
+		this.likeStudents = likeStudents;
+	}
+
+	public String getLikeLocation() {
+		return likeLocation;
+	}
+
+	public void setLikeLocation(String likeLocation) {
+		this.likeLocation = likeLocation;
+	}
+
+	public String getLikeAtmos() {
+		return likeAtmos;
+	}
+
+	public void setLikeAtmos(String likeAtmos) {
+		this.likeAtmos = likeAtmos;
+	}
+
+	public String getLikeDorms() {
+		return likeDorms;
+	}
+
+	public void setLikeDorms(String likeDorms) {
+		this.likeDorms = likeDorms;
+	}
+
+	public String getLikeSports() {
+		return likeSports;
+	}
+
+	public void setLikeSports(String likeSports) {
+		this.likeSports = likeSports;
+	}
+
+	public String getInterestFriends() {
+		return interestFriends;
+	}
+
+	public void setInterestFriends(String interestFriends) {
+		this.interestFriends = interestFriends;
+	}
+
+	public String getInterestTv() {
+		return interestTv;
+	}
+
+	public void setInterestTv(String interestTv) {
+		this.interestTv = interestTv;
+	}
+
+	public String getInterestInternet() {
+		return interestInternet;
+	}
+
+	public void setInterestInternet(String interestInternet) {
+		this.interestInternet = interestInternet;
+	}
+
+	public String getInterestOther() {
+		return interestOther;
+	}
+
+	public void setInterestOther(String interestOther) {
+		this.interestOther = interestOther;
+	}
+
+	public String getLikely() {
+		return likely;
+	}
+
+	public void setLikely(String likely) {
+		this.likely = likely;
+	}
+
+	public String getRaffle() {
+		return raffle;
+	}
+
+	public void setRaffle(String raffle) {
+		this.raffle = raffle;
+	}
+
+	public String getComment() {
+		return comment;
+	}
+
+	public void setComment(String comment) {
+		this.comment = comment;
+	}
 }
