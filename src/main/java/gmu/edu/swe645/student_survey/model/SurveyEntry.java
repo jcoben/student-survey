@@ -62,8 +62,8 @@ public class SurveyEntry {
 	@Column(name="interest_tv", nullable=false)
 	private String interestTv;
 	
-	@Column(name="interest_radio", nullable=false)
-	private String interestRadio;
+	@Column(name="interest_internet", nullable=false)
+	private String interestInternet;
 	
 	@Column(name="interest_other", nullable=false)
 	private String interestOther;
@@ -76,4 +76,28 @@ public class SurveyEntry {
 	
 	@Column(name="comment", nullable=false)
 	private String comment;
+	
+	public void update(SurveyEntry entry) {
+		this.fName = entry.fName;
+		this.lName = entry.lName;
+		this.streetAddress = entry.streetAddress;
+		this.city = entry.city;
+		this.state = entry.state;
+		this.zip = entry.zip;
+		this.telephone = entry.telephone;
+		this.email = entry.email;
+		this.date = entry.date;
+		this.likeStudents = entry.likeStudents;
+		this.likeLocation = entry.likeLocation;
+		this.likeAtmos = entry.likeAtmos;
+		this.likeDorms = entry.likeDorms;
+		this.likeSports = entry.likeSports;
+		this.interestFriends = entry.interestFriends;
+		this.interestTv = entry.interestTv;
+		this.interestInternet = entry.interestInternet;
+		this.interestOther = entry.interestOther;
+		this.likely = entry.likely;
+		this.raffle = entry.raffle;
+		this.comment = entry.comment;
+	}
 }

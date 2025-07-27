@@ -45,7 +45,7 @@ public class SurveyServiceImpl implements SurveyService{
 		SurveyEntry existingEntry = surveyRepository.findById(id).orElseThrow(
 				() -> new IllegalArgumentException("Entry not found with this id."));
 		
-		//TODO: Set fields of entry
+		existingEntry.update(entry);
 		
 		//save to database
 		surveyRepository.save(existingEntry);
