@@ -13,7 +13,6 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.bind.annotation.CrossOrigin;
 
-
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
@@ -39,9 +38,9 @@ public class SurveyController {
 		System.out.println("Got POST request!");
 	
 	        try {
-			System.out.println(surveyEntry.getCity());
 			System.out.println(objectMapper.writeValueAsString(surveyEntry));
 		} catch (JsonProcessingException e) {
+			System.out.println("Error while parsing surveyEntry in POST request!");
 			e.printStackTrace();
 		}
 
